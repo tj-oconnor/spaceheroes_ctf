@@ -1,0 +1,3 @@
+shctf{thanks f0r th3 t4nk. he n3ver get5 me anyth1ng}
+
+Each UDP packet contains a timestamp in the data section with a number that changes in each packet. Those numbers match an index in a qwerty keyboard. Converting each number into its appropriate key gives the full flag. Should be able to be done easily by hand.

@@ -1,0 +1,6 @@
+put into invisible ink toolkit
+
+find ancient language online and decode at dcode.fr/en
+
+flag:
+shctf{one_small_step_for_jaffa}

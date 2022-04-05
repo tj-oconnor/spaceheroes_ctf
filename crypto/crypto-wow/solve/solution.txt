@@ -1,0 +1,4 @@
+In order to solve this challenge one must add up the number of occurances of each of the 26 unique symbols
+in the image "woah.png". After ordering these occurances from greatest to least they may then reference the 
+image "signal.png" to identify the letter corresponding to the frequency. "signal.png" is structured as top
+to bottom then left to right.

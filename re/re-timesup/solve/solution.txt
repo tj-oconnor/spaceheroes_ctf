@@ -1,0 +1,9 @@
+Solution: 
+
+When Time == 17 minutes,
+
+nc 0.cloud.chals.io 26020
+
+<<< Space Travel require precision.
+<<< Current Time Is: 07:53:45
+Enter authorization sequence >>> 100000 31337 99

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+h2 {
+ font-family: Courier;
+ color: white;
+ font-size:30px;
+}
+
+#demo {
+ font-family: Courier;
+ color: #77b55a;
+ font-size:25px; 
+}
+
+#quote {
+ font-family: Courier;
+ color: #77b55a;
+ font-size:25px; 
+}
+
+body {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  background-color: black;
+}
+
+.myButton {
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+  background-color:#77b55a;
+  border-radius:4px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Courier;
+  font-size:20px;
+  font-weight:bold;
+  padding:20px 50px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b8a3c;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+  background-color:#72b352;
+}
+.myButton:active {
+  position:relative;
+  top:0px;
+}
+
+.content {
+  max-width: 900px;
+  margin: auto;
+}
+
+</style>
+
+
+<body>
+<div class="content">
+<h2>Welcome Space Traveler</h2>
+
+<p id="quote" >The black hole teaches us that space can be crumpled like a piece of paper into an infinitesimal dot, that time can be extinguished like a blown-out flame, and that the laws of physics that we regard as sacred, as immutable, are anything but. - John Wheeler </p>
+
+
+<button class="myButton" onclick="myFunction()">Guess The Flag</button>
+
+<p id="demo"></p>
+
+</div>
+
+<script>
+function myFunction() {
+  let text;
+  let favDrink = prompt("Guess The Flag", "shctf{flag}");
+  switch(favDrink) {
+    case "shctf{eighty_seven_thousand_million_suns}":
+      text = "You guessed right.";
+      break;
+    default:
+      text = "You guessed wrong.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+

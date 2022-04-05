@@ -1,0 +1,7 @@
+SOLUTION
+Look through dissassembly
+answer is:
+Sothec0mbin@ti0n1s0n3twothre3f0urf1v3lll
+
+Returns flag:
+shctf{1m_jUst_a_p14in_y0gurt_ch4l1eng3}

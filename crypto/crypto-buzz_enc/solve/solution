@@ -1,0 +1,17 @@
+$ xortool -l 8 -b buzz.enc 
+
+256 possible key(s) of length 8:
+evilzurg
+dwhm{tsf
+gtknxwpe
+fujoyvqd
+armh~qvc
+...
+Found 14 plaintexts with 95%+ valid characters
+
+See files filename-key.csv, filename-char_used-perc_valid.csv
+
+$ xortool-xor -s evilzurg -f buzz.enc > buzz.bin  
+$ chmod +x buzz.bin 
+$ ./buzz.bin 
+shctf{Th1s-Isnt-Fly1ng-THis-Is-FAlliNg-W1th-Styl3}

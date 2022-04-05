@@ -1,0 +1,6 @@
+Welcome to Ricos Roughnecks. We use 1-time-pads to keep all our secrets safe from the Arachnids.
+Here in the mobile infantry, we also implement some stronger roughneck checks.
+
+Enter pad > EFGHIJKLMNOPQRSTUVWXxwvutsrqponmlkjihg
+[+] The fight is over, here is your flag: shctf{Th3-On1Y-G00d-BUg-I$-A-deAd-BuG}
+

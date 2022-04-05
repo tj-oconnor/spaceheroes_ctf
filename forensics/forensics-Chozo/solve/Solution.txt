@@ -1,0 +1,28 @@
+1. Identifying the file
+- hexdump(or any other tool that dumps hex) the file and inspect the file header
+Since the Header yields no good information since it has been scrambled the give aways are the
+IDAT and IEND strings scattered throughout the hex dumps
+  PNGs use IDAT to hold the image data and IEND to signify the end of the data stream
+Thus this is a PNG file
+
+2. Why wont it open?
+- While the contents refer to a PNG two major things are prevent it from opening
+  - The header
+  - The Extension
+
+The Header
+The first 16 bytes of the Header are:
+[50 47 89 0A 4E 0D 0A 1A-0D 48 44 00 52 00 00 49]
+[1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16]
+By using the PNG Signature as reference
+The first 8 bytes should be:
+[89 50 4E 47 0D 0A 1A 0A]
+[1  2  3  4  5  6  7  8 ]
+The last 8 bytes is notably the IHDR header which should be:
+[00 00 00 0D 49 48 44 52]
+[9  10 11 12 13 14 15 16]
+
+The Extension
+Simply renaming the extension to .png will work
+
+3. Open the image and obtain the flag

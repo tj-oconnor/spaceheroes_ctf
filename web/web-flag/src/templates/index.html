@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Flag in Space</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+
+<style>
+#grid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  justify-content: center;
+}
+#grid > div {
+  background-color: black;
+  color:#BF40BF;
+  font-size: 70px ;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-image: url("static/images/bg.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  background-color: black;
+}
+
+</style>
+
+
+<div id="grid">
+
+<div>
+{% if flag[0]==guess[0] %}
+{{flag[0]}}
+{% endif %}
+</div>
+<div>
+{% if flag[1]==guess[1] %}
+{{flag[1]}}
+{% endif %}
+</div>
+<div>
+{% if flag[2]==guess[2] %}
+{{flag[2]}}
+{% endif %}
+</div>
+<div>
+{% if flag[3]==guess[3] %}
+{{flag[3]}}
+{% endif %}
+</div>
+<div>
+{% if flag[4]==guess[4] %}
+{{flag[4]}}
+{% endif %}
+</div>
+<div>
+{% if flag[5]==guess[5] %}
+{{flag[5]}}
+{% endif %}
+</div>
+<div>
+{% if flag[6]==guess[6] %}
+{{flag[6]}}
+{% endif %}
+</div>
+<div>
+{% if flag[7]==guess[7] %}
+{{flag[7]}}
+{% endif %}
+</div>
+<div>
+{% if flag[8]==guess[8] %}
+{{flag[8]}}
+{% endif %}
+</div>
+<div>
+{% if flag[9]==guess[9] %}
+{{flag[9]}}
+{% endif %}
+</div>
+<div>
+{% if flag[10]==guess[10] %}
+{{flag[10]}}
+{% endif %}
+</div>
+<div>
+{% if flag[11]==guess[11] %}
+{{flag[11]}}
+{% endif %}
+</div>
+<div>
+{% if flag[12]==guess[12] %}
+{{flag[12]}}
+{% endif %}
+</div>
+<div>
+{% if flag[13]==guess[13] %}
+{{flag[13]}}
+{% endif %}
+</div>
+<div>
+{% if flag[14]==guess[14] %}
+{{flag[14]}}
+{% endif %}
+</div>
+<div>
+{% if flag[15]==guess[15] %}
+{{flag[15]}}
+{% endif %}
+</div>
+<div>
+{% if flag[16]==guess[16] %}
+{{flag[16]}}
+{% endif %}
+</div>
+<div>
+{% if flag[17]==guess[17] %}
+{{flag[17]}}
+{% endif %}
+</div>
+<div>
+{% if flag[18]==guess[18] %}
+{{flag[18]}}
+{% endif %}
+</div>
+<div>
+{% if flag[19]==guess[19] %}
+{{flag[19]}}
+{% endif %}
+</div>
+<div>
+{% if flag[20]==guess[20] %}
+{{flag[20]}}
+{% endif %}
+</div>
+<div>
+{% if flag[21]==guess[21] %}
+{{flag[21]}}
+{% endif %}
+</div>
+<div>
+{% if flag[22]==guess[22] %}
+{{flag[22]}}
+{% endif %}
+</div>
+<div>
+{% if flag[23]==guess[23] %}
+{{flag[23]}}
+{% endif %}
+</div>
+<div>
+{% if flag[24]==guess[24] %}
+{{flag[24]}}
+{% endif %}
+</div>
+
+</div>
+</html>

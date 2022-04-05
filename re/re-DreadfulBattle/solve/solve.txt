@@ -1,0 +1,10 @@
+In order to succesfully beat Raven Beak, Samus must flawlessy execute her combo.
+[Charge, Blast, Dodge, Rocket, Blast, Charge, Fire!] <-- Input to defeat Raven
+Beak, in this exact order
+
+Although defeating Raven doesn't reward you the flag, the flag is actually hidden throughout
+the battle function through print statements, But it relies on the correct sequence of
+user input to be revealed properly. The easy way to go about this is to patch the binary by removing the
+ptrace check, and dynamically analyzing the print statements. Hard way is to statically trace Every
+character that is being printed. note that the begining of the flag (shctf{) is actually hidden before the
+battle function in an unused variable.

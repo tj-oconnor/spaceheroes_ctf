@@ -1,0 +1,11 @@
+/*
+ * spaceflight challenge - Open in ghidra, figure out expected input, get them all right.
+ * Author: Sean LaPlante
+ *
+ * Answers:
+ *
+ * Phase 1: enter: "b3y0nd!infinity"
+ * Phase 2: cntrl+c then enter: "2 3 0 1"
+ * Phase 3: enter: "2147483647 2147483647 1" (multiple valid answers)
+ * Phase 4: enter: "jump*"
+ */

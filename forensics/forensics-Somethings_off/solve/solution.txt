@@ -1,0 +1,49 @@
+Solution:
+To send a secret message within messages the rebel alliance
+structured each message they sent as follows
+[  1  ][  2  ][  3   ]
+[XX:XX]Message[Sender]
+[1] Location where to splice the current message, XX being indices
+[2] Diversion message
+[3] Sender, which is just Anon followed by a letter and number
+
+There are 5 Diversion Messages mixed in with some junk packets
+2 [ICMP] related messages, each packet holds 1 char of the entire message.
+    - The first is scattered through the file in 7 sections, sorting by sender
+    and protocol helps
+    -The Second the Diversion message is reversed, found towards the end of the pcap
+2 [TCP] related Messages
+  -One of the messages requires both the sender and receiver of the packets as
+   they both only have half of the messages
+   -Second the receiver mimics and sends every packet they received, filtering either
+   the sender or receiver makes this easier
+1 [UDP] related messages
+  - The message is hidden within the destination port
+
+With all the messages collected, splicing them on the indices provides yields
+
+[New base on planet hoth]
+flag{New_base_on_planet_hoth}
+
+Terminal Solutions: 
+[03:04]I dont support the rebels, but they sure are brave to keep on going[anonB1]
+on
+ tshark -r Challenge.pcap -Tfields -e tcp.seq_raw 
+[00:02]News lately suggest the rebels have made a new base[anonR1]
+
+New
+
+ tshark -r Challenge.pcap -Tfields -e tcp.seq_raw 
+
+[52:55]BRAVE? you have to be kidding no matter how many bases they make, they will always be scum[anonE2]
+tshark -r Challenge.pcap -Tfields -e icmp.code
+
+base
+
+[35:38]Hey man, theres no reason to be so hotheaded relax[anonL1] - UDP
+tshark -r Challenge.pcap -Tfields -e udp.dstport
+hoth
+
+[34:39]What? I doubt that, there is'nt a planet left they could hide in[anonE1] - planet - ICMP(rev)
+tshark -r Challenge.pcap -Tfields -e icmp.seq 
+planet 

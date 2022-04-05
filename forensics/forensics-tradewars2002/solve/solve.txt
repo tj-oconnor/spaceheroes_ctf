@@ -1,0 +1,12 @@
+prints out flag
+echo "shctf{$(expr 1000 \* 150 \* $(tshark -r tradewars2002.pcapng -T fields -e telnet.data|grep "150"|grep "leave"|wc -l))}"
+
+displays number of trips/ units in trip
+  tshark -r tradewars2002.pcapng -T fields -e telnet.data|grep leave | cut -c75- | tr ']' ' ' | awk '{print $1}' | sort | uniq -c
+
+
+Question
+how many colonists were moved from fule ore production to organics production, keep in mind a group of collonists is 1000 colonits, wrap in flag{}
+
+
+shctf{18150000}

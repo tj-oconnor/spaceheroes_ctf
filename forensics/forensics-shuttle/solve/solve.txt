@@ -1,0 +1,14 @@
+Challenge: Future Steg
+
+Description: 
+Sally Ride magazine to hint at the password
+
+Answer:
+Use https://futureboy.us/stegano/decinput.html
+enter password: sallyride
+view raw output
+~ OR ~
+use steghide
+steghide extract -sf shuttle.jpg -p "sallyride"
+
+Flag: shctf{weightlessness_is_a_great_equalizer}

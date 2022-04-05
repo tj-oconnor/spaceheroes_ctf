@@ -1,0 +1,9 @@
+How far away from earth was the space car on January, 20, 2021 at 1515 UTC?
+Enter in terms of Million Km. Don't follow the flag format.
+
+1. Google starman space car
+2. go to theskylive.com/roadster-info
+3. enter in January 20 2021 1515 UTC
+4. grab data from the Earth distance field (56.68)
+
+Flag: 56.68

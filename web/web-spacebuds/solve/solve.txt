@@ -1,0 +1,5 @@
+To solve:
+1. inspect the web page
+2. change the userId cookie to Mudbud or mudbud
+3. click submit
+4. enter flag

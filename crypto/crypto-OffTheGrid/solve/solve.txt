@@ -1,0 +1,64 @@
+   |0 1 2 3 4 5 6 7 8 9 a b c
+ -----------------------------
+ 0 |t|h|r|o|U|g|h|o|u|t|o|u|r|
+ 1 |l|i|V|i|n|g|n|i|g|h|t|M|a|
+ 2 |r|e|a|s|w|e|b|a|t|t|l|e|w|
+ 3 |I|t|h|t|h|i|S|u|n|Y|i|e|L|
+ 4 |D|i|n|g|d|A|r|K|n|e|s|s|w|
+ 5 |e|c|h|o|Z|o|s|e|e|a|l|i|g|
+ 6 |h|t|t|h|i|s|l|i|g|h|t|g|l|
+ 7 |o|w|s|W|i|t|h|P|r|O|m|i|s|
+ 8 |E|c|h|a|s|i|s|g|t|h|e|s|h|
+ 9 |a|d|o|w|s|C|a|s|t|B|y|t|h|
+ a |e|G|R|e|a|T|p|o|i|s|o|n|a|
+ b |n|d|p|u|r|i|F|y|i|N|g|w|h|
+ c |i|c|H|g|r|o|w|n|t|o|X|i|c|
+ -----------------------------
+ {UIKOTHNVGELBKCRNPDDN}
+ -----------------------------
+ Within the challenge grid a prophecy is given from the Metroid lore with several
+ letters randomly uppercased. An encrypted string is also provided in which discovering what
+ the grid represents will reveal the hidden message. The grid is structure to resembled a
+ play fair cipher, by utilizing all of the uppercased letters.
+
+ -------
+ Solving
+ -------
+ By break the encrypted string into pairs, translation via the grid is possible.
+ start by locating the individual uppercased letters on the grid
+ ex. UI => U is at [4,0] and I is at [0,3]
+
+ next from a square with the location of the letters, each letter making opposite corners
+ ex.
+    |t|h|r|o|U|
+    |l|i|V|i|n|
+    |r|e|a|s|w|
+    |I|t|h|t|h|
+
+lastly, substitute each uppercased letter with the letter found on the same row but
+using the column of the other capitalized letter.
+ex. U:[4,0] and I:[0,3], U becomes t:[0,0] and I becomes h:[4,3]
+    T <---- U
+   |t|h|r|o|U|
+   |l|i|V|i|n|
+   |r|e|a|s|w|
+   |I|t|h|t|h|
+    I ----> H
+repeat this process for every pair
+KO -> ep
+  |K|n|e|
+  |e|e|a|
+  |i|g|h|
+  |P|r|O|
+TH -> ro
+  |R|e|a|T|
+  |p|u|r|i|
+  |H|g|r|o|
+and so...
+
+until {UIKOTHNVGELBKCRNPDDN} => {theprophecyhasspoken}
+following the guidelines for flag submission, the flag can be crafted
+|flag format: Every word capitalized; seperated by "_"|
+|shctf{One_Two_Three_Four}                            |
+
+shctf{THE_PROPHECY_HAS_SPOKEN}

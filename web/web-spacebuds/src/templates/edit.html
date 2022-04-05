@@ -1,0 +1,15 @@
+<head>
+    <title>Hackers Welcome</title>
+</head>
+
+<body style="background-image: url({{ url_for('static', filename='images/hacker.jpg') }});">  
+	<center>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <form action = "/getcookie" method = "POST">
+    	<p><b><h3 style="color:white; font-size:30px;">Enter userID</h3></p></b>
+    	<p><input type = 'text' name = 'nm' style="display:none"/></p>
+    	<p><input type = 'submit' value = 'Login' /></p>
+    </form>
+    </center> 
+    
+</body>

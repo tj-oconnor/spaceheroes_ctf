@@ -1,0 +1,7 @@
+What is the name of the launch and payload pictured.
+format: shctf{rocket_payload}
+
+Use exiftool to find the date the image was taken and then search for launches on that date 
+
+Ans:
+shctf{Falcon_Heavy_Arabsat_6A}

