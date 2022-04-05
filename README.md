@@ -24,7 +24,7 @@ Space Heroes CTF was an online jeopardy style Capture the Flag competition that 
 | [Off The Grid](crypto/crypto-OffTheGrid)  | crypto |  [Our Solution](crypto/crypto-OffTheGrid/solve)    |   [Ivan](https://github.com/IvanD-Hernandez) | 
 | [Information Paradox](crypto/crypto-rsa) | crypto |  [Our Solution](crypto/crypto-rsa/solve)    |   [Isaiah](https://github.com/IsaiahST2020) | 
 | [Buzz Ransomware](crypto/crypto-buzz_enc) | crypto |  [Our Solution](crypto/crypto-buzz_enc/solve)    |   [TJ](https://github.com/tj-oconnor) | 
-| [Easy Crypto Challenged](crypto/crypto-ecc) | crypto |  [Our Solution](crypto/crypto-ecc/solve), [Github Link](https://github.com/12flamingo/CTF-writeups/tree/main/Space%20Heroes%202022/%5Bcrypto%5D%20Easy%20Crypto%20Challenge)bo |   [Carl](https://github.com/carlinux727) | 
+| [Easy Crypto Challenged](crypto/crypto-ecc) | crypto |  [Our Solution](crypto/crypto-ecc/solve), [Github Link](https://github.com/12flamingo/CTF-writeups/tree/main/Space%20Heroes%202022/%5Bcrypto%5D%20Easy%20Crypto%20Challenge) |   [Carl](https://github.com/carlinux727) | 
 | [Stargate-Crypto](crypto/crypto_stargate) | crypto |  [Our Solution](crypto/crypto_stargate/solve)    |   [Kourtnee](https://github.com/kourtnee) | 
 | [Mobile Infantry](crypto/crypto-mobile_infantry)  | crypto |  [Our Solution](crypto/crypto-mobile_infantry/solve), [CTFtime Link](https://ctftime.org/writeup/32960)    |   [TJ](https://github.com/tj-oconnor) | 
 | [Rahool's Challenge](crypto/crypto-rahoolschallenge)   | crypto |  [Our Solution](crypto/crypto-rahoolschallenge/solve), [CTFtime Link](https://ctftime.org/writeup/32970), [Github Link](https://github.com/WhileSEC/shctf/tree/main/crypto/rahools-challenge)   |   [Josh](https://github.com/joshuabreininger) | 
